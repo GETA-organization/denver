@@ -1,0 +1,39 @@
+#separator {
+  width: 100%;
+  height: 30px;
+  background-color: var(--white);
+}
+
+.denverModel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.denverModel .container {
+  width: 70%;
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.denverModel .container h2 {
+  margin: 30px 0;
+  
+  font-size: 2.6rem;
+  font-weight: 300;
+  word-spacing: 10px;
+}
+
+.denverModel .container p {
+  margin: 0 0 30px 0;
+  font-size: 1.375rem;
+  font-weight: 300;
+}

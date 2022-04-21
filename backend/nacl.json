@@ -1,0 +1,73 @@
+[
+    {
+      "group": "admin",
+      "permissions": [
+        {
+          "resource": "*",
+          "methods": "*",
+          "action": "allow"
+        }
+      ]
+    },
+    {
+      "group": "moderator",
+      "permissions": [
+        {
+          "resource": "lessons/*",
+          "methods": ["POST", "GET", "PATCH", "DELETE"],
+          "action": "allow"
+        },
+        {
+          "resource": "questions/*",
+          "methods": ["POST", "GET", "PATCH", "DELETE"],
+          "action": "allow"
+        },
+        {
+          "resource": "users/*",
+          "methods": ["GET"],
+          "action": "allow"
+        }
+      ]
+    },
+    {
+      "group": "user",
+      "permissions": [
+        {
+          "resource": "lessons/*",
+          "methods": ["GET"],
+          "action": "allow"
+        },
+        {
+          "resource": "questions/*",
+          "methods": ["GET"],
+          "action": "allow"
+        },
+        {
+          "resource": "users/currentuser",
+          "methods": ["GET"],
+          "action": "allow"
+        }
+        
+      ]
+    },
+    {
+      "group": "guest",
+      "permissions": [
+        {
+          "resource": "role/*",
+          "methods": ["POST"],
+          "action": "allow"
+        },
+        {
+          "resource": "users/*",
+          "methods": ["POST"],
+          "action": "allow"
+        },
+        {
+          "resource": "sessions/*",
+          "methods": ["POST"],
+          "action": "allow"
+        }
+      ]
+    }
+  ]
